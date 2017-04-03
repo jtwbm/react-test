@@ -9,6 +9,11 @@
   "author": "jt_wbm",
   "license": "MIT",
   "devDependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
