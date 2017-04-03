@@ -7,5 +7,8 @@
     "start": "node server.js"
   },
   "author": "jt_wbm",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
 }
