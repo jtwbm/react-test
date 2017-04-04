@@ -1,11 +1,44 @@
+$red: #fc5f45;
+
+$sans-serif: "Poppins", "Open Sans", "Arial", "Helvetica", sans-serif;
+$serif: "Noto Serif", "Georgia", "Times New Roman", "Times", serif;
+$handwriting: "Pattaya", "Georgia", "Times New Roman", "Times", serif;
+
 body {
-	margin: 0;
-	padding: 0;
-	background: #000;
-	font-family: "Poppins", "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-family: $sans-serif;
+	font-size: 15px;
+	color: #616161;
 }
-body * {
-	box-sizing: border-box;
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* HEADER */
+a.logo {
+	display: inline-block;
+	font-size: 35px;
+	line-height: 75px;
+	font-family: $handwriting;
+	color: #616161;
+	
+	span {
+		color: $red;
+	}
+}
+nav.mainMenu {
+	text-align: right;
+
+	a {
+		display: inline-block;
+		line-height: 75px;
+		font-size: 14px;
+		padding: 0 10px;
+		color: #272727;
+		text-transform: capitalize;
+		text-decoration: none;
+		font-weight: bold;
+	}
 }
