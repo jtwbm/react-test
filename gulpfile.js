@@ -28,7 +28,9 @@ gulp.task('sass', function() {
 });
 gulp.task("css-libs", ['sass'], function() {
 	return gulp.src([
-		'css/main.css'
+		'css/main.css',
+		'css/tablet.css',
+		'css/desktop.css'
 	])
 	.pipe(cssnano())
 	.pipe(rename({suffix: '.min'}))

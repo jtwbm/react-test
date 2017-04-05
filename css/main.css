@@ -6,6 +6,41 @@ body {
 a:hover {
   text-decoration: none; }
 
+h1 {
+  font-family: "Georgia", "Times New Roman", "Times", serif;
+  font-size: 40px;
+  margin: 0 auto 50px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 50px;
+  max-width: 400px; }
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fc5f45;
+  line-height: 50px;
+  width: 180px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold; }
+
+/* ICONS */
+.icon {
+  display: inline-block;
+  background: url("../img/icons.png"); }
+  .icon.icon-dollar, .icon.icon-watch, .icon.icon-success {
+    width: 40px;
+    height: 40px; }
+  .icon.icon-dollar {
+    background-position: -24px -25px; }
+  .icon.icon-watch {
+    background-position: -100px -25px; }
+  .icon.icon-success {
+    background-position: -175px -25px; }
+
 /* HEADER */
 a.logo {
   display: inline-block;
@@ -16,14 +51,77 @@ a.logo {
   a.logo span {
     color: #fc5f45; }
 
+a.mainMenu-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  color: #ccc;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center; }
+  a.mainMenu-button.active {
+    color: #666; }
+
 nav.mainMenu {
-  text-align: right; }
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 1px;
+  z-index: 100;
+  background: #fafafa;
+  padding: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3); }
   nav.mainMenu a {
-    display: inline-block;
-    line-height: 75px;
-    font-size: 14px;
-    padding: 0 10px;
-    color: #272727;
+    display: block;
+    line-height: 40px;
+    font-size: 18px;
+    color: #555;
     text-transform: capitalize;
     text-decoration: none;
-    font-weight: bold; }
+    border-bottom: 1px solid #eee; }
+    nav.mainMenu a:last-child {
+      border-bottom: none; }
+
+/* BANNER */
+section.banner {
+  text-align: center;
+  padding: 100px 0 50px;
+  background: #262732 center url("../img/banner-mobile.jpg") no-repeat;
+  background-size: cover; }
+  section.banner .banner-thingBlock {
+    margin: 50px auto 0;
+    max-width: 400px; }
+    section.banner .banner-thingBlock .col-lg-4:last-child .banner-thing {
+      margin-bottom: 0; }
+  section.banner .banner-thing {
+    text-align: left;
+    margin-bottom: 30px; }
+    section.banner .banner-thing .icon {
+      vertical-align: middle;
+      margin-right: 10px; }
+    section.banner .banner-thing p {
+      margin: 0;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 18px;
+      width: -webkit-calc(100% - 55px);
+      width: calc(100% - 55px);
+      vertical-align: middle; }
+    section.banner .banner-thing .icon-dollar + p {
+      color: #38c695; }
+    section.banner .banner-thing .icon-watch + p {
+      color: #b27cf5; }
+    section.banner .banner-thing .icon-success + p {
+      color: #feb960; }
+
+@media screen and (min-width: 400px) {
+  nav.mainMenu {
+    max-width: 280px;
+    right: 0;
+    left: auto; } }
