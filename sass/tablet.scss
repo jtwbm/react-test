@@ -1,5 +1,70 @@
+h1 {
+	font-size: 50px;
+	line-height: 70px;
+	max-width: 600px;
+}
+h2 {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+/* BANNER */
 section.banner {
+	background-image: url("../img/banner-tablet.jpg");
+
 	.banner-thingBlock {
-		max-width: 100%;
+		max-width: 800px;
+	}
+
+	.banner-thing {
+		margin-bottom: 0;
+
+		.icon {
+			display: block;
+			margin: 0 auto;
+		}
+		p {
+			display: block;
+			text-align: center;
+			width: 100%;
+			margin-top: 35px;
+		}
+		
+	}
+}
+
+/* SCREEN 1 */
+section.screen-1 {
+	margin-top: 100px;
+	max-width: 1140px;
+
+	.numeric:before {
+		font-size: 273px;
+		top: -65px;
+	}
+	.imgBlock {
+		display: block;
+		position: absolute;
+		width: 555px;
+		height: 700px;
+		background-image: url("../img/about.jpg");
+		box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.2);
+	}
+	.textBlock {
+		width: 80%;
+		max-width: 650px;
+		padding: 80px 80px 0;
+		float: right;
+		margin-top: 70px;
+		z-index: 100;
+		
+		p {
+			font-size: 18px;
+			line-height: 27px;
+		}
+		.bottomLine {
+			width: calc(100% + 160px);
+			left: -80px;
+		}
 	}
 }

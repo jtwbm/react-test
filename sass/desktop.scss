@@ -1,0 +1,41 @@
+h1 {
+	font-size: 60px;
+	line-height: 85px;
+}
+header {
+	height: 75px;
+}
+a.mainMenu-button {
+	display: none;
+}
+nav.mainMenu {
+	display: block;
+	position: static;
+    width: 100%;
+    z-index: 100;
+	background: none;
+	text-align: right;
+	box-shadow: none;
+	max-width: none;
+	padding: 0;
+
+	a {
+		display: inline-block;
+		line-height: 75px;
+		font-size: 14px;
+		color: #272727;
+		text-transform: capitalize;
+		text-decoration: none;
+		border-bottom: none;
+		padding: 0 10px;
+		font-weight: bold;
+	}
+}
+section.banner {
+	padding: 170px 0;
+	background-image: url("../img/banner-desktop.jpg");
+
+	.banner-thingBlock {
+		margin-top: 80px;
+	}
+}
