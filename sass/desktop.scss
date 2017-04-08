@@ -1,3 +1,7 @@
+body {
+	font-size: 15px;
+	line-height: 22px;
+}
 h1 {
 	font-size: 60px;
 	line-height: 85px;
@@ -31,11 +35,27 @@ nav.mainMenu {
 		font-weight: bold;
 	}
 }
+/* BANNER */
 section.banner {
 	padding: 170px 0;
 	background-image: url("../img/banner-desktop.jpg");
 
 	.banner-thingBlock {
 		margin-top: 80px;
+	}
+}
+/* SCREEN 2 */
+section.screen-2 {
+	.focusBlock {
+		p {
+			font-size: 15px;
+			line-height: 22px;
+		}
+		.col-lg-3 {
+			margin-bottom: 0;
+		}
+	}
+	.focusTitle {
+		font-size: 20px;
 	}
 }

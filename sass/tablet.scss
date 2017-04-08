@@ -33,15 +33,15 @@ section.banner {
 	}
 }
 
+.numeric:before {
+	font-size: 273px;
+	line-height: 273px;
+}
 /* SCREEN 1 */
 section.screen-1 {
 	margin-top: 100px;
 	max-width: 1140px;
 
-	.numeric:before {
-		font-size: 273px;
-		top: -65px;
-	}
 	.imgBlock {
 		display: block;
 		position: absolute;
@@ -66,5 +66,40 @@ section.screen-1 {
 			width: calc(100% + 160px);
 			left: -80px;
 		}
+	}
+}
+/* SCREEN 2 */
+section.screen-2 {
+	padding: 150px 0;
+
+	.bottomLine {
+		bottom: -60px;
+	}
+	.focusBlock {
+		margin-top: 80px;
+
+		p {
+			margin: 0 15px;
+		}
+		.col-lg-3 {
+			margin-bottom: 30px;
+		}
+		.col-lg-3:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+	}
+	.focusItem {
+		padding: 60px 0;
+		text-align: center;
+	}
+	.focusIcon {
+		float: none;
+		margin: 0;
+	}
+	.focusTitle {
+		height: auto;
+		font-size: 18px;
+		line-height: 30px;
+		margin: 20px 15px;
 	}
 }
